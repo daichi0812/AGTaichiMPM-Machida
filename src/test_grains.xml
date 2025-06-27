@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<AGTaichiMPMGrains2D>
+  <integrator
+    dt = "0.00001"
+    bulk_modulus = "100000.0"
+    shear_modulus = "40000.0"
+    dp_a = "100.0"
+    dp_b = "0.4"
+    flip_pic_alpha = "0.95"
+    max_time = "10.0"
+  />
+  <grid min="0.0 0.0" max="1.2 1.2" cell_width="0.01"/>
+  <rectangle min="0.0 0.0" max="0.2 0.4" density="790.0" cell_samples_per_dim="2" vel="0.0 0.0"/>
+  <!--<static_plane x="0.0 0.0" n="0.0 1.0" boundary_behavior="sticking"/>-->
+  <static_plane x="0.0 0.0" n="0.0 1.0" boundary_behavior="sliding"/>
+  <static_plane x="0.0 0.0" n="1.0 0.0" boundary_behavior="sticking"/>
+  <!--static_plane x="0.8 0.0" n="-1.0 0.0" boundary_behavior="sliding"/>
+  <static_plane x="0.0 0.4" n="0.0 -1.0" boundary_behavior="sticking"/>
+  <static_plane x="0.8 0.0" n="-1.0 0.0" boundary_behavior="sticking"/>
+  <static_plane x="0.0 0.8" n="0.0 -1.0" boundary_behavior="sticking"/>-->
+  <near_earth_gravity f="0.0 -9.8"/>
+</AGTaichiMPMGrains2D>
+
+
+
+
+
+
